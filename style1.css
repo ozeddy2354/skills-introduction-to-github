@@ -1,0 +1,92 @@
+body{
+    font-size: 12px;
+}
+
+    #logo {
+        font-family: Arial, sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: #007bff; /* Change the color to your desired logo color */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding:0px;
+        background-color: #ffffff; /* Change the background color if needed */
+        text-align: center;
+        
+    }
+    .navbar {
+        background-color: #333; /* Set background color */
+        overflow: hidden; /* Clear floats */
+    }
+    
+    /* Style the list items */
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar li {
+        float: left; /* Float the list items to create a horizontal layout */
+    }
+    
+    /* Style the links */
+    .navbar a {
+        display: block;
+        color: #fff; /* Text color */
+        text-align: right;
+        padding: 14px 16px; /* Add padding for spacing */
+        text-decoration: none; /* Remove underlines */
+    }
+    
+    /* Change link color on hover */
+    .navbar a:hover {
+        background-color: #555;
+    }
+    /* CSS for Slideshow Container */
+.slideshow-container {
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* CSS for Slides */
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+/* Define background images for each slide */
+.slide:nth-child(1) {
+    background-image: url('image/image1.jpg');
+}
+.slide:nth-child(2) {
+    background-image: url('image/image2.jpg');
+}
+.slide:nth-child(3) {
+    background-image: url('image/image3.jpg');
+}
+.slide:nth-child(1) {
+    background-image: url('image/image4.jpg');
+}
+.slide:nth-child(2) {
+    background-image: url('image/image5.jpg');
+}
+.slide:nth-child(3) {
+    background-image: url('image/image6.jpg');
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
